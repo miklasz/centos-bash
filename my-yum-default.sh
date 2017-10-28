@@ -3,6 +3,10 @@ function log {
   echo "=> $1"  >&2
 }
 log ""
+log "ADD VIM"
+sudo yum -y install vim
+log ""
+log ""
 log "ADD GIT"
 log ""
 sudo yum -y install git
