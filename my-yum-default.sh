@@ -4,12 +4,16 @@ function log {
 }
 log ""
 log "ADD VIM"
-sudo yum -y install vim
 log ""
+sudo yum -y install vim
 log ""
 log "ADD GIT"
 log ""
 sudo yum -y install git
+log ""
+log "ADD MTR"
+log ""
+sudo yum -y install mtr
 log ""
 log "ADD WGET"
 log ""
