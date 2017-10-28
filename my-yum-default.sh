@@ -71,6 +71,7 @@ maxretry = 5
 bantime = 86400
 EOFF2B2
 log ""
+log "ADD FIREWALL RULES - IPTABLES"
 log ""
 log "BLOCK bots and null - recon packets"
 sudo iptables -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
@@ -130,3 +131,7 @@ systemctl enable firewalld
 systemctl start firewalld
 systemctl enable fail2ban
 systemctl start fail2ban 
+log ""
+log ""
+log "DONE :-)"
+log ""
